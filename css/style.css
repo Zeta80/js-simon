@@ -4,12 +4,18 @@
     box-sizing: border-box;
 }
 
+.title-seconds {
+    margin: 1em auto;
+    text-align: center;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
     min-height: 250px;
-    margin: 100px auto;
+    margin: 0 auto;
+    margin-top: 30px;
     justify-content: center;
 }
 
