@@ -10,7 +10,8 @@
 // const numberFour = document.getElementById("number4")
 // const numberFive = document.getElementById("number5")
 const itemCont = document.querySelector(".item-cont")
-
+const elementBlock = document.querySelector(".block");
+console.log(elementBlock);
 const title = document.querySelector("h1");
 let count = 2
 
@@ -48,15 +49,14 @@ for (let i = 0; i < rndNumbers.length; i++) {
 
 
 const counter = setInterval(function () {
+
     if (count > 0) {
         title.innerHTML = count;
         count--;
         console.log(count);
     } else {
-        const element = document.querySelectorAll(".item");
-        console.log(element);
-        element.
-            console.log(count);
+        elementBlock.classList.add("hidden")
+        console.log(count);
         clearInterval(counter);
     }
 }, 1000);
