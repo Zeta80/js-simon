@@ -86,6 +86,12 @@ function textResult() {
 }
 
 //dico all utente quanti numeri giusti ha scritto
+/**
+ * Description
+ * @param {array} a metto un array per confronto
+ * @param {Array} b metto secondo array per confronto
+ * @returns {array} return un array con numeri in ambo gli array
+ */
 function intersect_safe(a, b) {
     let ai = 0, bi = 0;
     let result = [];
