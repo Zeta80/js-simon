@@ -10,11 +10,16 @@
 // const numberFour = document.getElementById("number4")
 // const numberFive = document.getElementById("number5")
 const itemCont = document.querySelector(".item-cont")
-console.log(itemCont);
+
+const title = document.querySelector("h1");
+let count = 2
+
 
 
 //creo un array che conterrà i 5 numeri generati a caso
 const rndNumbers = [];
+//creo un array dove mettere i numeri scritti da user
+const userNumbers = [];
 
 //ciclo while per generare numericamente i 5 numeri casuali
 do {
@@ -40,6 +45,21 @@ for (let i = 0; i < rndNumbers.length; i++) {
     itemCont.innerHTML += numbers;
 
 }
+
+
+const counter = setInterval(function () {
+    if (count > 0) {
+        title.innerHTML = count;
+        count--;
+        console.log(count);
+    } else {
+        const element = document.querySelectorAll(".item");
+        console.log(element);
+        element.
+            console.log(count);
+        clearInterval(counter);
+    }
+}, 1000);
 
 
 
